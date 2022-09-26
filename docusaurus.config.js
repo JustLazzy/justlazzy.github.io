@@ -13,6 +13,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/justlazzy.png",
+  deploymentBranch: "main",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -116,6 +117,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ["lua"],
       },
     }),
 };
