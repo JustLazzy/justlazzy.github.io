@@ -4,15 +4,6 @@ title: 🏨 JL Motel
 description: A Motel script for QBCore
 ---
 
-## Dependencies:
-
-- qb-doorlock
-- qb-inventory / lj-inventory
-- qb-management
-- qb-interior
-- qb-target
-- PolyZone
-
 ## Feature:
 
 - Support MLO & Shell
