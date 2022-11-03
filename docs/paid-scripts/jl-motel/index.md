@@ -2,6 +2,7 @@
 id: jl-motel
 title: 🏨 JL Motel
 description: A Motel script for ESX and QBCore
+sidebar_position: 1
 ---
 
 ## Feature:
