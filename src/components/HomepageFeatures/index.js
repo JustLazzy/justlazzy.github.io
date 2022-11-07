@@ -4,20 +4,26 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Are you Lazy?",
-    Svg: require("@site/static/img/notme.png").default,
-    description: <>I don't know</>,
-    isimage: true,
-  },
-  {
-    title: "Focus on What Matters",
+    title: "Back Story",
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A little boy was born on 2004, 18 years later, he become obsessed with
+        programming
       </>
     ),
+  },
+  {
+    title: "Are you Lazy?",
+    Svg: require("@site/static/img/me.png").default,
+    description: (
+      <>
+        Yea. I do have another name before this, but I changed it, since I
+        prefer getting called lazy dev rather than JustLazzy
+      </>
+    ),
+    isimage: true,
+    rounded: true,
   },
   {
     title: "Powered by React",
@@ -31,11 +37,23 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description, isimage = false }) {
+function Feature({
+  Svg,
+  title,
+  description,
+  isimage = false,
+  rounded = false,
+}) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        {isimage && <img src={Svg} className={styles.fImage}></img>}
+        {isimage && (
+          <img
+            src={Svg}
+            className={`${styles.fImage} ${styles.fuck}`}
+            style={rounded ? { borderRadius: "50%" } : {}}
+          ></img>
+        )}
         {!isimage && <Svg className={styles.featureSvg} role="img" />}
       </div>
       <div className="text--center padding-horiz--md">

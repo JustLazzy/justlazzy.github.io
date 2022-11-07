@@ -6,13 +6,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Just Lazy",
+  title: "Lazy Dev",
   tagline: "You're a chad if you read the docs",
   url: "https://justlazzy.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/justlazzy.png",
+  favicon: "img/me.png",
   deploymentBranch: "build",
 
   // GitHub pages deployment config.
@@ -58,10 +58,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "JustLazzy",
+        title: "Lazy Dev",
         logo: {
           alt: "JustLazzy",
-          src: "img/justlazzy.png",
+          src: "img/me.png",
         },
         items: [
           {
@@ -114,10 +114,15 @@ const config = {
           },
         ],
       },
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ["lua"],
+      },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
       },
     }),
 };

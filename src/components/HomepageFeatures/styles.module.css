@@ -13,3 +13,16 @@
 .fImage {
   height: 200px;
 }
+
+.fuck {
+  background-color: transparent;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #f7db45 0,
+    #f7db45 1px,
+    transparent 0,
+    transparent 50%
+  );
+}
