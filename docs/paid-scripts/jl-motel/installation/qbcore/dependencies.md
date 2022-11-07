@@ -3,6 +3,7 @@ sidebar_position: 1
 title: Dependencies
 ---
 
+- ox lib
 - qb-core
 - qb-phone
 - qb-management
